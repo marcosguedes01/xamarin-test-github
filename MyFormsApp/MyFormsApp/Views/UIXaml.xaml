@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFormsApp.Views.UIXaml">
+  <StackLayout Padding="20" Spacing="20">
+    <!--<Entry x:Name="user" Text="marcosguedes01" TextColor="#3498DB"></Entry>
+    <Button x:Name="search" Text="Search" TextColor="White" BackgroudColor="#3498DB"></Button>
+    <ListView x:Name="list"></ListView>-->
+
+    <Entry Text="{Binding User}" TextColor="#3498DB"></Entry>
+    
+    <Button Text="Search" Command="{Binding Clicked}" TextColor="White" BackgroundColor="#3498DB"></Button>
+
+    <DatePicker Format="dd/MM/yyyy"></DatePicker>
+    <TimePicker Format="hh/mm/ss"></TimePicker>
+    <Slider Maximum="10" Minimum="1"></Slider>
+    
+    <ListView ItemsSource="{Binding Items}"></ListView>
+
+  </StackLayout>
+
+</ContentPage>
